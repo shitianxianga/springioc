@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="user" class="demo.User">
+        <property name="name" value="李四"></property>
+        <property name="age" value="15"></property>
+        <property name="sex" value="男"></property>
+    </bean>
+    <bean id="order" class="demo.Order">
+        <property ref="user"></property>
+
+    </bean>
+</beans>
